@@ -435,7 +435,7 @@
     move-result-object v1
 
     .line 42
-    const-string v2, "LGI12BC1"
+    const-string v2, "LGI12BC0"
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

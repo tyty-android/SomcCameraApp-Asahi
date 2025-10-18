@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final PRODUCT_NAME_PDX_245:Ljava/lang/String; = "PDX-245"
+.field public static final PRODUCT_NAME_PDX_245:Ljava/lang/String; = "PDX-234"
 
 .field public static final PRODUCT_NAME_PDX_256:Ljava/lang/String; = "PDX-256"
 
@@ -51,7 +51,7 @@
 
     invoke-direct {v1}, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap$2;-><init>()V
 
-    const-string v2, "PDX-245"
+    const-string v2, "PDX-234"
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

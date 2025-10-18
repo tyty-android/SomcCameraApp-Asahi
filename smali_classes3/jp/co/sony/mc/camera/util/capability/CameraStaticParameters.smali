@@ -20,7 +20,7 @@
 
 .field private static final PRODUCT_SHOWCASE_AF_SPEED:I = 0x64
 
-.field public static final SENSOR_NAME_ALMA_PHYSICAL:Ljava/lang/String; = "LGI12BC1"
+.field public static final SENSOR_NAME_ALMA_PHYSICAL:Ljava/lang/String; = "LGI12BC0"
 
 .field public static final SENSOR_NAME_CROCUS:Ljava/lang/String; = "SUN12BS0"
 
@@ -30,7 +30,7 @@
 
 .field public static final SENSOR_NAME_K2_PHYSICAL2:Ljava/lang/String; = "SEM48BC0"
 
-.field public static final SENSOR_NAME_MAUNAKEA_LOGICAL:Ljava/lang/String; = "SMC12BX6"
+.field public static final SENSOR_NAME_MAUNAKEA_LOGICAL:Ljava/lang/String; = "SMC12BX4"
 
 .field public static final SENSOR_NAME_MAUNAKEA_PHYSICAL1:Ljava/lang/String; = "SEM52BC0"
 

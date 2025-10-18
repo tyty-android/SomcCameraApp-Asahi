@@ -48,6 +48,7 @@
         <item>FOUR_K_UHD</item>
     </string-array>
     <string-array name="zoom_slider_label_zoom_ratio_pdx_245">
+        <item>1.0</item>
         <item>2.0</item>
         <item>10.0</item>
     </string-array>
