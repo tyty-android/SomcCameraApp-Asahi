@@ -35,7 +35,7 @@
 
     new-instance v1, Ljp/co/sony/mc/camera/device/CameraInfo;
 
-    const-string v2, "SMC12BX6"
+    const-string v2, "SMC12BX4"
 
     const-string v3, "0"
 
@@ -82,12 +82,22 @@
 
     invoke-virtual {p0, v0, v1}, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap$2;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    # Added for PDX-234
+
+    sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->SLOW_MOTION:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    new-instance v1, Ljp/co/sony/mc/camera/device/CameraInfo;
+
+    invoke-direct {v1, v2, v5, v5, v4}, Ljp/co/sony/mc/camera/device/CameraInfo;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+
+    invoke-virtual {p0, v0, v1}, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap$2;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 51
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     new-instance v1, Ljp/co/sony/mc/camera/device/CameraInfo;
 
-    const-string v2, "LGI12BC1"
+    const-string v2, "LGI12BC0"
 
     const-string v5, "3"
 

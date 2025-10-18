@@ -219,7 +219,7 @@
     goto :goto_1
 
     :sswitch_9
-    const-string v0, "SMC12BX6"
+    const-string v0, "SMC12BX4"
 
     invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -232,7 +232,7 @@
     goto :goto_1
 
     :sswitch_a
-    const-string v0, "LGI12BC1"
+    const-string v0, "LGI12BC0"
 
     invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
