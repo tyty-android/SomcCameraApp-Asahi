@@ -1848,7 +1848,7 @@
 
     :cond_1
     :goto_0
-    const/4 p0, 0x1
+    const/4 p0, 0x0
 
     :goto_1
     return p0
