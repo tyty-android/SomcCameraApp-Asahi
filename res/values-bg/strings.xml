@@ -870,7 +870,7 @@ M (Ръчна експозиция)"</string>
     <string name="camera_strings_runtime_permission_title_read_audio_sound_txt">Четене на аудио/звук</string>
     <string name="camera_strings_runtime_permission_title_read_images_videos_txt">Четене на изображения/видеоклипове</string>
     <string name="camera_strings_save_destination_description_main_txt">Изберете дали снимките и видеоклиповете да се съхраняват във вътрешната памет на устройството или на SD карта.</string>
-    <string name="camera_strings_save_destination_description_note_txt">Забележка: възможно е съдържанието да на бъде записано, ако използвате SD карта, която не е препоръчана.</string>
+    <string name="camera_strings_save_destination_description_note_txt">Забележка: Възможно е това приложение да на работи правилно, ако използвате SD карта, която не е препоръчана.</string>
     <string name="camera_strings_save_destination_description_sub_v30_120fps_txt">- Запис на видео с 120 fps</string>
     <string name="camera_strings_save_destination_description_sub_v30_4k_txt">- 4K запис на видео</string>
     <string name="camera_strings_save_destination_description_sub_v30_raw_txt">- Заснемане на снимки в RAW формат</string>

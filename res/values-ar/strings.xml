@@ -871,7 +871,7 @@
     <string name="camera_strings_runtime_permission_title_read_audio_sound_txt">قراءة الملفات الصوتية/الصوت</string>
     <string name="camera_strings_runtime_permission_title_read_images_videos_txt">قراءة الصور/مقاطع الفيديو</string>
     <string name="camera_strings_save_destination_description_main_txt">اختر ما إذا كان من الممكن تخزين صور ومقاطع فيديو على وحدة التخزين الداخلية لجهازك أو على بطاقة SD.</string>
-    <string name="camera_strings_save_destination_description_note_txt">ملاحظة: قد لا يتم حفظ المحتوى إذا كنت تستخدم بطاقة SD غير موصى بها.</string>
+    <string name="camera_strings_save_destination_description_note_txt">ملاحظة: قد لا يعمل هذا التطبيق بشكل صحيح في حال استخدام بطاقة SD غير موصى بها.</string>
     <string name="camera_strings_save_destination_description_sub_v30_120fps_txt">- تسجيل فيديو 120 fps</string>
     <string name="camera_strings_save_destination_description_sub_v30_4k_txt">- تسجيل فيديو بدقة 4K</string>
     <string name="camera_strings_save_destination_description_sub_v30_raw_txt">- تصوير صورة فوتوغرافية بتنسيق RAW</string>

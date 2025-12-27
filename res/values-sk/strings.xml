@@ -871,7 +871,7 @@ Upozorňujeme, že v závislosti od zmluvy s mobilným operátorom alebo poskyto
     <string name="camera_strings_runtime_permission_title_read_audio_sound_txt">Čítať zvuk</string>
     <string name="camera_strings_runtime_permission_title_read_images_videos_txt">Čítať obrázky/videá</string>
     <string name="camera_strings_save_destination_description_main_txt">Vyberte, či sa majú fotografie a videá ukladať v internom ukladacom priestore vášho zariadenia alebo na karte SD.</string>
-    <string name="camera_strings_save_destination_description_note_txt">Poznámka: Obsah sa nemusí uložiť, ak použijete neodporúčanú kartu SD.</string>
+    <string name="camera_strings_save_destination_description_note_txt">Poznámka: Táto aplikácia nemusí správne fungovať, ak použijete neodporúčanú kartu SD.</string>
     <string name="camera_strings_save_destination_description_sub_v30_120fps_txt">- Nahrávanie videa na 120 snímok za sekundu</string>
     <string name="camera_strings_save_destination_description_sub_v30_4k_txt">- Nahrávanie videí vo formáte 4K</string>
     <string name="camera_strings_save_destination_description_sub_v30_raw_txt">- Fotenie vo formáte RAW</string>

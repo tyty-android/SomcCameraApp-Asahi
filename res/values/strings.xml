@@ -1079,7 +1079,7 @@ Note that you may be charged for data depending on your network operator or inte
     <string name="camera_strings_runtime_permission_title_read_audio_sound_txt">Read audio/sound</string>
     <string name="camera_strings_runtime_permission_title_read_images_videos_txt">Read images/videos</string>
     <string name="camera_strings_save_destination_description_main_txt">"Choose whether to store photos and videos on your device's internal storage or on an SD card."</string>
-    <string name="camera_strings_save_destination_description_note_txt">Note: Content may not be saved if you use a non-recommended SD card.</string>
+    <string name="camera_strings_save_destination_description_note_txt">Note: This application may not work correctly if you use a non-recommended SD card.</string>
     <string name="camera_strings_save_destination_description_sub_v30_120fps_txt">- 120 fps video recording</string>
     <string name="camera_strings_save_destination_description_sub_v30_4k_txt">- 4K video recording</string>
     <string name="camera_strings_save_destination_description_sub_v30_raw_txt">- RAW format photo shooting</string>

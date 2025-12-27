@@ -871,7 +871,7 @@ Ambil perhatian bahawa anda mungkin dikenakan bayaran untuk data bergantung pada
     <string name="camera_strings_runtime_permission_title_read_audio_sound_txt">Baca audio/bunyi</string>
     <string name="camera_strings_runtime_permission_title_read_images_videos_txt">Baca imej/video</string>
     <string name="camera_strings_save_destination_description_main_txt">Pilih sama ada menyimpan foto dan video pada storan dalaman peranti anda atau pada kad SD.</string>
-    <string name="camera_strings_save_destination_description_note_txt">Perhatian: Kandungan tidak boleh disimpan jika anda menggunakan kad SD yang tidak disyorkan.</string>
+    <string name="camera_strings_save_destination_description_note_txt">Perhatian: Aplikasi ini mungkin tidak berfungsi dengan betul jika anda menggunakan kad SD yang tidak disyorkan.</string>
     <string name="camera_strings_save_destination_description_sub_v30_120fps_txt">- Rakaman video 120 fps</string>
     <string name="camera_strings_save_destination_description_sub_v30_4k_txt">- Rakaman video 4K</string>
     <string name="camera_strings_save_destination_description_sub_v30_raw_txt">- Tangkapan foto format RAW</string>

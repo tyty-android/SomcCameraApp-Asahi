@@ -871,7 +871,7 @@ Huomaa, että verkko-operaattorisi tai internet-palveluntarjoajasi voi veloittaa
     <string name="camera_strings_runtime_permission_title_read_audio_sound_txt">Äänen lukeminen</string>
     <string name="camera_strings_runtime_permission_title_read_images_videos_txt">Kuvien/videoiden lukeminen</string>
     <string name="camera_strings_save_destination_description_main_txt">Valitse, tallennetaanko valokuvat ja videot laitteen sisäiseen muistiin vai SD-kortille.</string>
-    <string name="camera_strings_save_destination_description_note_txt">Huomautus: sisältöä ei välttämättä tallenneta, jos käytät muuta kuin suositeltua SD-korttia.</string>
+    <string name="camera_strings_save_destination_description_note_txt">Huomautus: sovellus ei välttämättä toimi oikein, jos käytät muuta kuin suositeltua SD-korttia.</string>
     <string name="camera_strings_save_destination_description_sub_v30_120fps_txt">- 120 FPS:n videotallennus</string>
     <string name="camera_strings_save_destination_description_sub_v30_4k_txt">- 4K-videotallennus</string>
     <string name="camera_strings_save_destination_description_sub_v30_raw_txt">- Valokuvien ottaminen RAW-muodossa</string>

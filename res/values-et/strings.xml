@@ -871,7 +871,7 @@ Arvestage, et sõltuvalt teie võrguoperaatorist või Interneti-teenuse pakkuja 
     <string name="camera_strings_runtime_permission_title_read_audio_sound_txt">Heli lugemine</string>
     <string name="camera_strings_runtime_permission_title_read_images_videos_txt">Piltide/videote lugemine</string>
     <string name="camera_strings_save_destination_description_main_txt">Valige, kas salvestada fotod ja videod oma seadme sisemällu või SD-kaardile.</string>
-    <string name="camera_strings_save_destination_description_note_txt">Märkus. Sisu ei pruugita salvestada, kui kasutate mittesoovitatavat SD-kaarti.</string>
+    <string name="camera_strings_save_destination_description_note_txt">Märkus. See rakendus ei pruugi korrektselt toimida, kui kasutate mittesoovitatavat SD-kaarti.</string>
     <string name="camera_strings_save_destination_description_sub_v30_120fps_txt">- Video salvestamine 120 kaadrit/s</string>
     <string name="camera_strings_save_destination_description_sub_v30_4k_txt">- 4K video salvestamine</string>
     <string name="camera_strings_save_destination_description_sub_v30_raw_txt">- RAW-vormingus pildistamine</string>

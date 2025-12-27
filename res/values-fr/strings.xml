@@ -871,7 +871,7 @@ Veuillez noter qu'il se peut que votre opérateur réseau ou votre fournisseur d
     <string name="camera_strings_runtime_permission_title_read_audio_sound_txt">"Lecture d'audio / de son"</string>
     <string name="camera_strings_runtime_permission_title_read_images_videos_txt">"Lecture d'images / de vidéos"</string>
     <string name="camera_strings_save_destination_description_main_txt">Définir si vous souhaitez enregistrer les photos et vidéos dans la mémoire interne de votre appareil ou sur une carte SD.</string>
-    <string name="camera_strings_save_destination_description_note_txt">"Remarque : il y a des risques que le contenu ne soit pas enregistré en cas d'utilisation d'une carte SD non recommandée."</string>
+    <string name="camera_strings_save_destination_description_note_txt">"Remarque : cette application risque de ne pas fonctionner correctement en cas d'utilisation d'une carte SD non recommandée."</string>
     <string name="camera_strings_save_destination_description_sub_v30_120fps_txt">- Enregistrement vidéo 120 IPS</string>
     <string name="camera_strings_save_destination_description_sub_v30_4k_txt">- Enregistrement vidéo 4K</string>
     <string name="camera_strings_save_destination_description_sub_v30_raw_txt">- Prise de photo au format RAW</string>

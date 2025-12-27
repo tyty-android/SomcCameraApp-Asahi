@@ -871,7 +871,7 @@ Mogelijk worden er kosten in rekening gebracht voor data afhankelijk van uw cont
     <string name="camera_strings_runtime_permission_title_read_audio_sound_txt">Audio/geluid lezen</string>
     <string name="camera_strings_runtime_permission_title_read_images_videos_txt">"Afbeeldingen/video's lezen"</string>
     <string name="camera_strings_save_destination_description_main_txt">"Kies of u foto's en video's in het interne geheugen van uw apparaat of op een SD-kaart wilt opslaan."</string>
-    <string name="camera_strings_save_destination_description_note_txt">Opmerking: inhoud wordt mogelijk niet opgeslagen als u een niet-aanbevolen SD-kaart gebruikt.</string>
+    <string name="camera_strings_save_destination_description_note_txt">Opmerking: deze applicatie werkt mogelijk niet goed als u een niet-aanbevolen SD-kaart gebruikt.</string>
     <string name="camera_strings_save_destination_description_sub_v30_120fps_txt">- Video opnemen met 120 fps</string>
     <string name="camera_strings_save_destination_description_sub_v30_4k_txt">- 4K-video-opname</string>
     <string name="camera_strings_save_destination_description_sub_v30_raw_txt">"- Foto's maken in RAW-indeling"</string>

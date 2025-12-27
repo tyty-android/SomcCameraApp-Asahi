@@ -115,7 +115,7 @@
         "focusColor",
         "getProbeResolution",
         "Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Resolution;",
-        "resolution",
+        "videoSize",
         "getProbeHdrFormat",
         "Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HdrSdr;",
         "hdrSdr",

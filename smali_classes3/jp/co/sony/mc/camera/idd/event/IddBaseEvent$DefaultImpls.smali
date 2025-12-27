@@ -1145,14 +1145,14 @@
 
     .line 732
     :cond_20
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/idd/value/IddSetting;->getResolution()Ljp/co/sony/mc/camera/idd/value/IddResolution;
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/idd/value/IddSetting;->getVideoSize()Ljp/co/sony/mc/camera/idd/value/IddVideoSize;
 
     move-result-object v2
 
     if-eqz v2, :cond_21
 
     .line 733
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/idd/value/IddSetting;->getResolution()Ljp/co/sony/mc/camera/idd/value/IddResolution;
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/idd/value/IddSetting;->getVideoSize()Ljp/co/sony/mc/camera/idd/value/IddVideoSize;
 
     move-result-object v2
 

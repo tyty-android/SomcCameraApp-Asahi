@@ -871,7 +871,7 @@ Lưu ý rằng bạn có thể bị tính phí dữ liệu tùy thuộc vào h�
     <string name="camera_strings_runtime_permission_title_read_audio_sound_txt">Đọc tập tin âm thanh</string>
     <string name="camera_strings_runtime_permission_title_read_images_videos_txt">Đọc hình ảnh/video</string>
     <string name="camera_strings_save_destination_description_main_txt">Chọn lưu ảnh chụp và video vào bộ nhớ trong của thiết bị hay vào thẻ SD.</string>
-    <string name="camera_strings_save_destination_description_note_txt">Lưu ý: Nội dung có thể không được lưu lại nếu bạn sử dụng một thẻ SD không được khuyến nghị.</string>
+    <string name="camera_strings_save_destination_description_note_txt">Lưu ý: Ứng dụng này có thể hoạt động không đúng cách nếu bạn sử dụng thẻ SD không được khuyến nghị.</string>
     <string name="camera_strings_save_destination_description_sub_v30_120fps_txt">- Quay video 120 fps</string>
     <string name="camera_strings_save_destination_description_sub_v30_4k_txt">- Quay video 4K</string>
     <string name="camera_strings_save_destination_description_sub_v30_raw_txt">- Chụp ảnh dạng RAW</string>

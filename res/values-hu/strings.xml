@@ -871,7 +871,7 @@ Ne feledje, hogy a hálózatüzemeltető vagy az internetszolgáltató szerződ�
     <string name="camera_strings_runtime_permission_title_read_audio_sound_txt">Audió/hang olvasása</string>
     <string name="camera_strings_runtime_permission_title_read_images_videos_txt">Képek/videók olvasása</string>
     <string name="camera_strings_save_destination_description_main_txt">Megadhatja, hogy a fényképeket és videókat a saját belső tárhelyére vagy egy SD-kártyára mentse a készülék.</string>
-    <string name="camera_strings_save_destination_description_note_txt">Megjegyzés: lehet, hogy a tartalmat nem tudja elmenteni, ha nem az ajánlott SD-kártyát használja.</string>
+    <string name="camera_strings_save_destination_description_note_txt">Megjegyzés: lehetséges, hogy az alkalmazás nem működik megfelelően, ha nem a javasolt SD-kártyát használja.</string>
     <string name="camera_strings_save_destination_description_sub_v30_120fps_txt">- 120 képkocka/mp-es videórögzítés</string>
     <string name="camera_strings_save_destination_description_sub_v30_4k_txt">- 4K videorögzítés</string>
     <string name="camera_strings_save_destination_description_sub_v30_raw_txt">- RAW formátumú fényképfelvétel</string>

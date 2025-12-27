@@ -871,7 +871,7 @@ Mogą być naliczane opłaty za transmisję danych zależnie od umowy z operator
     <string name="camera_strings_runtime_permission_title_read_audio_sound_txt">Odczyt plików audio/dźwięku</string>
     <string name="camera_strings_runtime_permission_title_read_images_videos_txt">Odczyt obrazów/wideo</string>
     <string name="camera_strings_save_destination_description_main_txt">Wybierz, czy zapisywać fotografie i wideo w pamięci wewnętrznej urządzenia, czy na karcie SD.</string>
-    <string name="camera_strings_save_destination_description_note_txt">Uwaga: zawartość może nie zostać zapisana na niezalecanej karcie SD.</string>
+    <string name="camera_strings_save_destination_description_note_txt">Uwaga: ta aplikacja może nie działać prawidłowo, jeżeli używasz niezalecanej karty SD.</string>
     <string name="camera_strings_save_destination_description_sub_v30_120fps_txt">- Nagrywanie wideo 120 kl./s</string>
     <string name="camera_strings_save_destination_description_sub_v30_4k_txt">- Nagrywanie wideo 4K</string>
     <string name="camera_strings_save_destination_description_sub_v30_raw_txt">- Fotografowanie w formacie RAW</string>

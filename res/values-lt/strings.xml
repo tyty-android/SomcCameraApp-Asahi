@@ -871,7 +871,7 @@ Atminkite, kad jums gali taikomi mokesčiai už duomenis, priklausomai nuo jūs�
     <string name="camera_strings_runtime_permission_title_read_audio_sound_txt">Skaityti garso įrašus / garsą</string>
     <string name="camera_strings_runtime_permission_title_read_images_videos_txt">Skaityti vaizdus / vaizdo įrašus</string>
     <string name="camera_strings_save_destination_description_main_txt">Pasirinkite, ar saugoti nuotraukas ir vaizdo įrašus įrenginio vidinėje atmintyje ar SD kortelėje.</string>
-    <string name="camera_strings_save_destination_description_note_txt">Pastaba: turinys nebus išsaugotas, jei naudosite kitą, nei rekomenduojama SD kortelė.</string>
+    <string name="camera_strings_save_destination_description_note_txt">Pastaba: programa gali neveikti tinkamai, jei naudosite kitą, nei rekomenduojama SD kortelė.</string>
     <string name="camera_strings_save_destination_description_sub_v30_120fps_txt">- 120 kadr./s vaizdo įrašymas</string>
     <string name="camera_strings_save_destination_description_sub_v30_4k_txt">- 4K vaizdo įrašymas</string>
     <string name="camera_strings_save_destination_description_sub_v30_raw_txt">- Fotografavimas RAW formatu</string>

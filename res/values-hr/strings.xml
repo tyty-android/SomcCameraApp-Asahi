@@ -871,7 +871,7 @@ Može vam se naplatiti potrošnja podataka, ovisno o ugovorima s mrežnim operat
     <string name="camera_strings_runtime_permission_title_read_audio_sound_txt">Čitanje zvučnih zapisa / zvuka</string>
     <string name="camera_strings_runtime_permission_title_read_images_videos_txt">Čitanje slika/videozapisa</string>
     <string name="camera_strings_save_destination_description_main_txt">Odaberite hoće li se fotografije i videozapisi pohranjivati u unutarnju memoriju uređaja ili na SD karticu.</string>
-    <string name="camera_strings_save_destination_description_note_txt">Napomena: moguće je da sadržaj neće biti spremljen ako upotrebljavate SD karticu koja nije preporučena.</string>
+    <string name="camera_strings_save_destination_description_note_txt">Napomena: moguće je da aplikacija neće pravilno funkcionirati ako upotrebljavate SD karticu koja nije preporučena.</string>
     <string name="camera_strings_save_destination_description_sub_v30_120fps_txt">- Snimanje videozapisa od 120 sl./s</string>
     <string name="camera_strings_save_destination_description_sub_v30_4k_txt">- Snimanje 4K videozapisa</string>
     <string name="camera_strings_save_destination_description_sub_v30_raw_txt">- Snimanje fotografija u RAW formatu</string>

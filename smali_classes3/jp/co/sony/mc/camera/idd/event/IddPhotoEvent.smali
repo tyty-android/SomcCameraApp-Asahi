@@ -667,7 +667,7 @@
     .line 70
     iget-object p1, p0, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent;->setting:Ljp/co/sony/mc/camera/idd/value/IddSetting;
 
-    invoke-virtual {p1, p3}, Ljp/co/sony/mc/camera/idd/value/IddSetting;->setResolution(Ljp/co/sony/mc/camera/idd/value/IddResolution;)V
+    invoke-virtual {p1, p3}, Ljp/co/sony/mc/camera/idd/value/IddSetting;->setVideoSize(Ljp/co/sony/mc/camera/idd/value/IddVideoSize;)V
 
     .line 71
     iget-object p1, p0, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent;->setting:Ljp/co/sony/mc/camera/idd/value/IddSetting;

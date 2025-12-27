@@ -871,7 +871,7 @@ M (ปรับการรับแสงเอง)"</string>
     <string name="camera_strings_runtime_permission_title_read_audio_sound_txt">อ่านเสียง</string>
     <string name="camera_strings_runtime_permission_title_read_images_videos_txt">อ่านภาพ/วิดีโอ</string>
     <string name="camera_strings_save_destination_description_main_txt">เลือกว่าจะจัดเก็บภาพถ่ายและวิดีโอไว้ในที่เก็บข้อมูลภายในอุปกรณ์หรือในการ์ด SD</string>
-    <string name="camera_strings_save_destination_description_note_txt">หมายเหตุ: เนื้อหาอาจไม่ได้รับการบันทึกไว้หากคุณใช้การ์ด SD ที่ไม่แนะนำ</string>
+    <string name="camera_strings_save_destination_description_note_txt">หมายเหตุ: แอปพลิเคชันนี้อาจไม่ทำงานอย่างถูกต้องหากคุณใช้การ์ด SD ที่ไม่แนะนำ</string>
     <string name="camera_strings_save_destination_description_sub_v30_120fps_txt">- การบันทึกวิดีโอ 120 เฟรม/วินาที</string>
     <string name="camera_strings_save_destination_description_sub_v30_4k_txt">- การบันทึกวิดีโอ 4K</string>
     <string name="camera_strings_save_destination_description_sub_v30_raw_txt">- การถ่ายภาพเป็นรูปแบบ RAW</string>

@@ -871,7 +871,7 @@ Zavedajte se, da vam lahko omrežni operater ali ponudnik internetnih storitev z
     <string name="camera_strings_runtime_permission_title_read_audio_sound_txt">Branje avdia/zvočnega zapisa</string>
     <string name="camera_strings_runtime_permission_title_read_images_videos_txt">Preberi slike/videoposnetke</string>
     <string name="camera_strings_save_destination_description_main_txt">Izberite, ali želite fotografije in videoposnetke shraniti v notranji pomnilnik naprave ali na kartico SD.</string>
-    <string name="camera_strings_save_destination_description_note_txt">Opomba: Vsebina se morda ne bo shranila, če uporabljate kartico SD, ki ni priporočena.</string>
+    <string name="camera_strings_save_destination_description_note_txt">Opomba: Ta aplikacija morda ne bo delovala pravilno, če uporabljate kartico SD, ki ni priporočena.</string>
     <string name="camera_strings_save_destination_description_sub_v30_120fps_txt">- Snemanje videoposnetkov s hitrostjo 120 okvirov/s</string>
     <string name="camera_strings_save_destination_description_sub_v30_4k_txt">- Snemanje videoposnetkov 4K</string>
     <string name="camera_strings_save_destination_description_sub_v30_raw_txt">- Fotografiranje v obliki zapisa RAW</string>

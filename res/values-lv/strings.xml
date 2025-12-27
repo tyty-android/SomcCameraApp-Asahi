@@ -871,7 +871,7 @@ Ievērojiet, ka par datu pārraidi no jums var tikt iekasēta maksa atkarībā n
     <string name="camera_strings_runtime_permission_title_read_audio_sound_txt">Lasīt audio/skaņu</string>
     <string name="camera_strings_runtime_permission_title_read_images_videos_txt">Lasīt attēlus/video</string>
     <string name="camera_strings_save_destination_description_main_txt">Izvēlieties, vai uzglabāt fotoattēlus un video savas ierīces iekšējā atmiņā vai SD kartē.</string>
-    <string name="camera_strings_save_destination_description_note_txt">Piezīme. Saturs var netikt saglabāts, ja izmantojat neieteiktu SD karti.</string>
+    <string name="camera_strings_save_destination_description_note_txt">Piezīme. Šī lietotne var nedarboties pareizi, ja izmantojat neieteiktu SD karti.</string>
     <string name="camera_strings_save_destination_description_sub_v30_120fps_txt">- 120 kadri/s video ieraksts</string>
     <string name="camera_strings_save_destination_description_sub_v30_4k_txt">- 4K video ierakstīšana</string>
     <string name="camera_strings_save_destination_description_sub_v30_raw_txt">- RAW formāta fotoattēlu uzņemšana</string>

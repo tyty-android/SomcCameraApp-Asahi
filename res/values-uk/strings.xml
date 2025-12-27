@@ -871,7 +871,7 @@ M (експозиція вручну)"</string>
     <string name="camera_strings_runtime_permission_title_read_audio_sound_txt">Зчитування аудіо / звуку</string>
     <string name="camera_strings_runtime_permission_title_read_images_videos_txt">Зчитування зображень / відеозаписів</string>
     <string name="camera_strings_save_destination_description_main_txt">Укажіть, де потрібно зберігати фотографії та відеозаписи — у вбудованій пам’яті пристрою або на картці SD.</string>
-    <string name="camera_strings_save_destination_description_note_txt">Примітка. У разі використання нерекомендованої SD-картки вміст може не бути збережено.</string>
+    <string name="camera_strings_save_destination_description_note_txt">Примітка. У разі використання нерекомендованої SD-картки ця програма може працювати некоректно.</string>
     <string name="camera_strings_save_destination_description_sub_v30_120fps_txt">- Запис відео із частотою 120 кадр./с.</string>
     <string name="camera_strings_save_destination_description_sub_v30_4k_txt">- Записування відео 4K</string>
     <string name="camera_strings_save_destination_description_sub_v30_raw_txt">- Зйомка фотографій у форматі RAW</string>

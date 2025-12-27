@@ -1994,7 +1994,7 @@
 
     const/4 v0, 0x3
 
-    const/4 v1, 0x2
+    const/4 v1, 0x4
 
     const/4 v2, 0x0
 

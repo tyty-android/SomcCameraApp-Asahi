@@ -871,7 +871,7 @@ Beachten Sie, dass in Abhängigkeit vom Vertrag mit Ihrem Netzbetreiber oder int
     <string name="camera_strings_runtime_permission_title_read_audio_sound_txt">Audio/Ton lesen</string>
     <string name="camera_strings_runtime_permission_title_read_images_videos_txt">Bilder/Videos lesen</string>
     <string name="camera_strings_save_destination_description_main_txt">Wählen Sie aus, ob Fotos und Videos im internen Speicher Ihres Geräts oder auf einer SD-Karte gespeichert werden sollen.</string>
-    <string name="camera_strings_save_destination_description_note_txt">Hinweis: Der Inhalt wird möglicherweise nicht gespeichert, wenn Sie eine nicht empfohlene SD-Karte verwenden.</string>
+    <string name="camera_strings_save_destination_description_note_txt">Hinweis: Diese Anwendung funktioniert möglicherweise nicht korrekt, wenn Sie eine nicht empfohlene SD-Karte verwenden.</string>
     <string name="camera_strings_save_destination_description_sub_v30_120fps_txt">- 120 BpS-Videoaufnahme</string>
     <string name="camera_strings_save_destination_description_sub_v30_4k_txt">- 4K-Videoaufnahme</string>
     <string name="camera_strings_save_destination_description_sub_v30_raw_txt">- Fotoaufnahme im RAW-Format</string>

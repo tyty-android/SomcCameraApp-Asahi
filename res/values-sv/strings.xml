@@ -871,7 +871,7 @@ Observera att du kan debiteras för data beroende på avtal med din nätverksope
     <string name="camera_strings_runtime_permission_title_read_audio_sound_txt">Läs ljudfiler</string>
     <string name="camera_strings_runtime_permission_title_read_images_videos_txt">Läs bilder/videor</string>
     <string name="camera_strings_save_destination_description_main_txt">Välj om du vill spara foton och videor i enhetens internminne eller på ett SD-kort.</string>
-    <string name="camera_strings_save_destination_description_note_txt">Observera: Innehåll kanske inte sparas om du använder ett annat SD-kort än de som rekommenderas.</string>
+    <string name="camera_strings_save_destination_description_note_txt">Observera: Denna applikation kanske inte fungerar korrekt om du använder ett annat SD-kort än de som rekommenderas.</string>
     <string name="camera_strings_save_destination_description_sub_v30_120fps_txt">- Videoinspelning i 120 bps</string>
     <string name="camera_strings_save_destination_description_sub_v30_4k_txt">- 4K-videoinspelning</string>
     <string name="camera_strings_save_destination_description_sub_v30_raw_txt">- Fotografering i RAW-format</string>

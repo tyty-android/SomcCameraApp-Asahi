@@ -871,7 +871,7 @@ M（手动曝光）"</string>
     <string name="camera_strings_runtime_permission_title_read_audio_sound_txt">读取音频/声音</string>
     <string name="camera_strings_runtime_permission_title_read_images_videos_txt">读取图像/视频</string>
     <string name="camera_strings_save_destination_description_main_txt">选择将照片和视频存储在设备的内部存储上还是SD卡上。</string>
-    <string name="camera_strings_save_destination_description_note_txt">注意：如果您使用不推荐的 SD 卡，内容可能不会保存。</string>
+    <string name="camera_strings_save_destination_description_note_txt">注意：如果您使用不推荐的SD卡，应用程序将无法正常工作。</string>
     <string name="camera_strings_save_destination_description_sub_v30_120fps_txt">- 120 fps视频录制</string>
     <string name="camera_strings_save_destination_description_sub_v30_4k_txt">- 4K视频录制</string>
     <string name="camera_strings_save_destination_description_sub_v30_raw_txt">- RAW格式照片拍摄</string>

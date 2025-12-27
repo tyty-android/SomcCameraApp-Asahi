@@ -687,7 +687,7 @@
 
     :catch_2d
     :try_start_2e
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->RESOLUTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VIDEO_SIZE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 

@@ -871,7 +871,7 @@ Merk at du kan bli belastet for data avhengig av kontraktene du har med nettoper
     <string name="camera_strings_runtime_permission_title_read_audio_sound_txt">Les lyd</string>
     <string name="camera_strings_runtime_permission_title_read_images_videos_txt">Les bilder/videoer</string>
     <string name="camera_strings_save_destination_description_main_txt">Velg om bilder og video skal lagres på enhetens interne lagring eller på et SD-kort.</string>
-    <string name="camera_strings_save_destination_description_note_txt">Merk: Det kan være innholdet ikke lagres dersom du benytter et SD-kort som ikke anbefales.</string>
+    <string name="camera_strings_save_destination_description_note_txt">Merk: Det kan hende at dette programmet ikke fungerer som det skal hvis du bruker et SD-kort som ikke anbefales.</string>
     <string name="camera_strings_save_destination_description_sub_v30_120fps_txt">- 120 BPS videoinnspilling</string>
     <string name="camera_strings_save_destination_description_sub_v30_4k_txt">- 4K-videoinnspilling</string>
     <string name="camera_strings_save_destination_description_sub_v30_raw_txt">- Bildetaking i RAW-format</string>

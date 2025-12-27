@@ -871,7 +871,7 @@ M (Экспозиция в ручном режиме)"</string>
     <string name="camera_strings_runtime_permission_title_read_audio_sound_txt">Чтение аудио и звуков</string>
     <string name="camera_strings_runtime_permission_title_read_images_videos_txt">Чтение изображений и видео</string>
     <string name="camera_strings_save_destination_description_main_txt">Выбор того, где нужно сохранять фотографии и видео — на внутреннем накопителе или SD-карте.</string>
-    <string name="camera_strings_save_destination_description_note_txt">Примечание: контент может быть не сохранен, если вы используете нерекомендованную SD-карту.</string>
+    <string name="camera_strings_save_destination_description_note_txt">Примечание: при использовании нерекомендованной SD-карты данное приложение может работать неправильно.</string>
     <string name="camera_strings_save_destination_description_sub_v30_120fps_txt">- Запись видео с частотой 120 кадров/с</string>
     <string name="camera_strings_save_destination_description_sub_v30_4k_txt">- Запись видео в разрешении 4K</string>
     <string name="camera_strings_save_destination_description_sub_v30_raw_txt">- Съемка фотографий в формате RAW</string>

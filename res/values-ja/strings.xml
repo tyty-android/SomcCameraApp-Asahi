@@ -678,11 +678,11 @@ SDR (BT.709)を選択した場合
     <string name="camera_strings_menu_heading_mode_photo_txt">%1$s (写真)</string>
     <string name="camera_strings_menu_heading_mode_video_front_txt">%1$s (動画/フロント)</string>
     <string name="camera_strings_menu_heading_mode_video_txt">%1$s (動画)</string>
-    <string name="camera_strings_menu_sub_photo_front_txt">フォト(フロント)</string>
-    <string name="camera_strings_menu_sub_photo_txt">フォト</string>
+    <string name="camera_strings_menu_sub_photo_front_txt">>写真(フロント)</string>
+    <string name="camera_strings_menu_sub_photo_txt">写真</string>
     <string name="camera_strings_menu_sub_slow_motion_txt">スローモーション</string>
-    <string name="camera_strings_menu_sub_video_front_txt">ビデオ(フロント)</string>
-    <string name="camera_strings_menu_sub_video_txt">ビデオ</string>
+    <string name="camera_strings_menu_sub_video_front_txt">動画(フロント)</string>
+    <string name="camera_strings_menu_sub_video_txt">動画</string>
     <string name="camera_strings_menu_tab_exposure_color_txt">露出/色</string>
     <string name="camera_strings_menu_tab_focus_txt">フォーカス</string>
     <string name="camera_strings_menu_tab_setup_txt">セットアップ</string>
@@ -872,7 +872,7 @@ M (マニュアル露出)"</string>
     <string name="camera_strings_runtime_permission_title_read_audio_sound_txt">オーディオ/音声の読み込み</string>
     <string name="camera_strings_runtime_permission_title_read_images_videos_txt">画像/動画の読み込み</string>
     <string name="camera_strings_save_destination_description_main_txt">写真やビデオの保存先を、機器の内部ストレージまたはSDカードから選択します。</string>
-    <string name="camera_strings_save_destination_description_note_txt">注意: 推奨されていないクラスのSDカードを使用すると、保存されない場合があります。</string>
+    <string name="camera_strings_save_destination_description_note_txt">注意: 推奨されていないクラスのSDカードを使用すると、正しく動作しない場合があります。</string>
     <string name="camera_strings_save_destination_description_sub_v30_120fps_txt">・120 fps動画撮影</string>
     <string name="camera_strings_save_destination_description_sub_v30_4k_txt">・4K動画撮影</string>
     <string name="camera_strings_save_destination_description_sub_v30_raw_txt">・RAW形式での写真撮影</string>
