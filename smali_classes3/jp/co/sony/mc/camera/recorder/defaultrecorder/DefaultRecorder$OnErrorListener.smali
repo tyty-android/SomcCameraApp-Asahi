@@ -27,12 +27,12 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;Ljp/co/sony/mc/camera/recorder/RecorderInterface$OnErrorListener;)V
     .locals 0
 
-    .line 577
+    .line 607
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnErrorListener;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 578
+    .line 608
     iput-object p2, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnErrorListener;->mListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$OnErrorListener;
 
     return-void
@@ -51,7 +51,7 @@
 
     const/4 p1, 0x1
 
-    .line 582
+    .line 612
     new-array v0, p1, [Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -88,7 +88,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
-    .line 584
+    .line 614
     iget-object p2, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnErrorListener;->mListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$OnErrorListener;
 
     invoke-interface {p2}, Ljp/co/sony/mc/camera/recorder/RecorderInterface$OnErrorListener;->onError()V
@@ -99,13 +99,13 @@
 
     goto :goto_0
 
-    .line 590
+    .line 620
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnErrorListener;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;
 
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;->-$$Nest$fputmIsErrorOnStart(Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;Z)V
 
-    .line 595
+    .line 625
     :goto_0
     new-array p0, p1, [Ljava/lang/String;
 
@@ -125,7 +125,7 @@
 
     const/4 p1, 0x0
 
-    .line 600
+    .line 630
     move-object v0, p1
 
     check-cast v0, Lcom/sonymobile/android/media/MediaRecorder;

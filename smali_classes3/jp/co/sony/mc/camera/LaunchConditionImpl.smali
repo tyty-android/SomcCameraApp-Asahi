@@ -1684,7 +1684,7 @@
 
     new-instance v15, Ljava/lang/StringBuilder;
 
-    const-string v5, "setLaunchMode: action: "
+    const-string/jumbo v5, "setLaunchMode: action: "
 
     invoke-direct {v15, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
@@ -2748,6 +2748,8 @@
     invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/LaunchConditionImpl;->updateCheckStartTime()V
 
     return-void
+
+    nop
 
     :sswitch_data_0
     .sparse-switch

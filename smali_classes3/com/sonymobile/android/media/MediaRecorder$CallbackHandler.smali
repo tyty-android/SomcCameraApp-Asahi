@@ -42,13 +42,13 @@
         }
     .end annotation
 
-    .line 1066
+    .line 1070
     iput-object p1, p0, Lcom/sonymobile/android/media/MediaRecorder$CallbackHandler;->this$0:Lcom/sonymobile/android/media/MediaRecorder;
 
-    .line 1067
+    .line 1071
     invoke-direct {p0, p3}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    .line 1069
+    .line 1073
     iput-object p2, p0, Lcom/sonymobile/android/media/MediaRecorder$CallbackHandler;->mRecorder:Ljava/lang/ref/WeakReference;
 
     return-void
@@ -59,14 +59,14 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 10
 
-    .line 1074
+    .line 1078
     iget v0, p1, Landroid/os/Message;->arg1:I
 
     const v1, 0xfffffff
 
     and-int/2addr v0, v1
 
-    .line 1075
+    .line 1079
     iget v1, p1, Landroid/os/Message;->what:I
 
     const-string v2, " message:"
@@ -101,7 +101,7 @@
 
     goto/16 :goto_0
 
-    .line 1124
+    .line 1128
     :cond_0
     iget-object v0, p0, Lcom/sonymobile/android/media/MediaRecorder$CallbackHandler;->this$0:Lcom/sonymobile/android/media/MediaRecorder;
 
@@ -111,7 +111,7 @@
 
     if-eqz v0, :cond_a
 
-    .line 1125
+    .line 1129
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder$CallbackHandler;->this$0:Lcom/sonymobile/android/media/MediaRecorder;
 
     invoke-static {p0}, Lcom/sonymobile/android/media/MediaRecorder;->-$$Nest$fgetmOnInfoListener(Lcom/sonymobile/android/media/MediaRecorder;)Landroid/media/MediaRecorder$OnInfoListener;
@@ -128,7 +128,7 @@
 
     goto/16 :goto_0
 
-    .line 1113
+    .line 1117
     :cond_1
     iget-object v1, p0, Lcom/sonymobile/android/media/MediaRecorder$CallbackHandler;->this$0:Lcom/sonymobile/android/media/MediaRecorder;
 
@@ -138,7 +138,7 @@
 
     if-eqz v1, :cond_a
 
-    .line 1114
+    .line 1118
     iget-object v1, p0, Lcom/sonymobile/android/media/MediaRecorder$CallbackHandler;->this$0:Lcom/sonymobile/android/media/MediaRecorder;
 
     invoke-static {v1}, Lcom/sonymobile/android/media/MediaRecorder;->-$$Nest$fgetmIsAvailable(Lcom/sonymobile/android/media/MediaRecorder;)Z
@@ -147,7 +147,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 1115
+    .line 1119
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder$CallbackHandler;->this$0:Lcom/sonymobile/android/media/MediaRecorder;
 
     invoke-static {p0}, Lcom/sonymobile/android/media/MediaRecorder;->-$$Nest$fgetmOnErrorListener(Lcom/sonymobile/android/media/MediaRecorder;)Landroid/media/MediaRecorder$OnErrorListener;
@@ -158,7 +158,7 @@
 
     goto/16 :goto_0
 
-    .line 1117
+    .line 1121
     :cond_2
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -186,7 +186,7 @@
 
     goto/16 :goto_0
 
-    .line 1108
+    .line 1112
     :cond_3
     iget-object p1, p0, Lcom/sonymobile/android/media/MediaRecorder$CallbackHandler;->this$0:Lcom/sonymobile/android/media/MediaRecorder;
 
@@ -196,7 +196,7 @@
 
     if-eqz p1, :cond_a
 
-    .line 1109
+    .line 1113
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder$CallbackHandler;->this$0:Lcom/sonymobile/android/media/MediaRecorder;
 
     invoke-static {p0}, Lcom/sonymobile/android/media/MediaRecorder;->-$$Nest$fgetmOnInfoListener(Lcom/sonymobile/android/media/MediaRecorder;)Landroid/media/MediaRecorder$OnInfoListener;
@@ -209,7 +209,7 @@
 
     goto/16 :goto_0
 
-    .line 1103
+    .line 1107
     :cond_4
     iget-object p1, p0, Lcom/sonymobile/android/media/MediaRecorder$CallbackHandler;->this$0:Lcom/sonymobile/android/media/MediaRecorder;
 
@@ -219,7 +219,7 @@
 
     if-eqz p1, :cond_a
 
-    .line 1104
+    .line 1108
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder$CallbackHandler;->this$0:Lcom/sonymobile/android/media/MediaRecorder;
 
     invoke-static {p0}, Lcom/sonymobile/android/media/MediaRecorder;->-$$Nest$fgetmOnInfoListener(Lcom/sonymobile/android/media/MediaRecorder;)Landroid/media/MediaRecorder$OnInfoListener;
@@ -245,7 +245,7 @@
 
     goto :goto_0
 
-    .line 1091
+    .line 1095
     :cond_6
     iget-object v0, p0, Lcom/sonymobile/android/media/MediaRecorder$CallbackHandler;->this$0:Lcom/sonymobile/android/media/MediaRecorder;
 
@@ -255,7 +255,7 @@
 
     if-eqz v0, :cond_a
 
-    .line 1092
+    .line 1096
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder$CallbackHandler;->this$0:Lcom/sonymobile/android/media/MediaRecorder;
 
     invoke-static {p0}, Lcom/sonymobile/android/media/MediaRecorder;->-$$Nest$fgetmOnInfoListener(Lcom/sonymobile/android/media/MediaRecorder;)Landroid/media/MediaRecorder$OnInfoListener;
@@ -270,7 +270,7 @@
 
     goto :goto_0
 
-    .line 1096
+    .line 1100
     :cond_7
     iget-object v0, p0, Lcom/sonymobile/android/media/MediaRecorder$CallbackHandler;->this$0:Lcom/sonymobile/android/media/MediaRecorder;
 
@@ -280,7 +280,7 @@
 
     if-eqz v0, :cond_a
 
-    .line 1097
+    .line 1101
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder$CallbackHandler;->this$0:Lcom/sonymobile/android/media/MediaRecorder;
 
     invoke-static {p0}, Lcom/sonymobile/android/media/MediaRecorder;->-$$Nest$fgetmOnInfoListener(Lcom/sonymobile/android/media/MediaRecorder;)Landroid/media/MediaRecorder$OnInfoListener;
@@ -295,7 +295,7 @@
 
     goto :goto_0
 
-    .line 1079
+    .line 1083
     :cond_8
     iget-object v1, p0, Lcom/sonymobile/android/media/MediaRecorder$CallbackHandler;->this$0:Lcom/sonymobile/android/media/MediaRecorder;
 
@@ -305,7 +305,7 @@
 
     if-eqz v1, :cond_a
 
-    .line 1080
+    .line 1084
     iget-object v1, p0, Lcom/sonymobile/android/media/MediaRecorder$CallbackHandler;->this$0:Lcom/sonymobile/android/media/MediaRecorder;
 
     invoke-static {v1}, Lcom/sonymobile/android/media/MediaRecorder;->-$$Nest$fgetmIsAvailable(Lcom/sonymobile/android/media/MediaRecorder;)Z
@@ -314,7 +314,7 @@
 
     if-eqz v1, :cond_9
 
-    .line 1081
+    .line 1085
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder$CallbackHandler;->this$0:Lcom/sonymobile/android/media/MediaRecorder;
 
     invoke-static {p0}, Lcom/sonymobile/android/media/MediaRecorder;->-$$Nest$fgetmOnErrorListener(Lcom/sonymobile/android/media/MediaRecorder;)Landroid/media/MediaRecorder$OnErrorListener;
@@ -327,7 +327,7 @@
 
     goto :goto_0
 
-    .line 1084
+    .line 1088
     :cond_9
     new-instance p0, Ljava/lang/StringBuilder;
 

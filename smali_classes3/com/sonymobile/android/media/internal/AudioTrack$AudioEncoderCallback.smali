@@ -22,7 +22,7 @@
 .method private constructor <init>(Lcom/sonymobile/android/media/internal/AudioTrack;)V
     .locals 0
 
-    .line 1046
+    .line 1077
     iput-object p1, p0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioEncoderCallback;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-direct {p0}, Landroid/media/MediaCodec$Callback;-><init>()V
@@ -43,14 +43,14 @@
 .method public onError(Landroid/media/MediaCodec;Landroid/media/MediaCodec$CodecException;)V
     .locals 1
 
-    .line 1065
+    .line 1096
     const-string p1, "AudioTrack"
 
     const-string v0, "Error from encoder"
 
     invoke-static {p1, v0, p2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 1066
+    .line 1097
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioEncoderCallback;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-static {p0}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmCallback(Lcom/sonymobile/android/media/internal/AudioTrack;)Landroid/os/Handler;
@@ -75,7 +75,7 @@
 .method public onInputBufferAvailable(Landroid/media/MediaCodec;I)V
     .locals 1
 
-    .line 1051
+    .line 1082
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioEncoderCallback;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-static {p0}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmAudioRecordHandler(Lcom/sonymobile/android/media/internal/AudioTrack;)Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;
@@ -90,7 +90,7 @@
 
     move-result-object p0
 
-    .line 1052
+    .line 1083
     invoke-virtual {p0}, Landroid/os/Message;->sendToTarget()V
 
     return-void
@@ -99,7 +99,7 @@
 .method public onOutputBufferAvailable(Landroid/media/MediaCodec;ILandroid/media/MediaCodec$BufferInfo;)V
     .locals 1
 
-    .line 1059
+    .line 1090
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioEncoderCallback;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-static {p0}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmCodecHandler(Lcom/sonymobile/android/media/internal/AudioTrack;)Lcom/sonymobile/android/media/internal/AudioTrack$CodecHandler;
@@ -114,7 +114,7 @@
 
     move-result-object p0
 
-    .line 1060
+    .line 1091
     invoke-virtual {p0}, Landroid/os/Message;->sendToTarget()V
 
     return-void

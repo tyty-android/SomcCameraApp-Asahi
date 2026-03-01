@@ -214,18 +214,18 @@
 .method protected finalize()V
     .locals 1
 
-    .line 1138
+    .line 1142
     iget-object v0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     if-eqz v0, :cond_0
 
-    .line 1140
+    .line 1144
     :try_start_0
     invoke-virtual {v0}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->reset()V
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1145
+    .line 1149
     :catch_0
     :try_start_1
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
@@ -758,6 +758,17 @@
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setVideoSource(I)V
+
+    return-void
+.end method
+
+.method public setWindNoiseReduction(Z)V
+    .locals 0
+
+    .line 1063
+    iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
+
+    invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setWindNoiseReduction(Z)V
 
     return-void
 .end method

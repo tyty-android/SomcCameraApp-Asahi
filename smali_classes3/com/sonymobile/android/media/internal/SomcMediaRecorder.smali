@@ -504,7 +504,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 903
+    .line 913
     iget-object p1, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mIsVideoTracksStarted:Ljava/util/Map;
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -515,17 +515,17 @@
 
     goto :goto_0
 
-    .line 905
+    .line 915
     :cond_0
     iput-boolean v0, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mIsAudioTrackStarted:Z
 
-    .line 909
+    .line 919
     :goto_0
     iget-object p1, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mStateLock:Ljava/lang/Object;
 
     monitor-enter p1
 
-    .line 911
+    .line 921
     :try_start_0
     iget-object p2, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mVideoTracks:Lcom/sonymobile/android/media/internal/VideoTrackSet;
 
@@ -550,7 +550,7 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
 
-    .line 912
+    .line 922
     iget-object v2, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mIsVideoTracksStarted:Ljava/util/Map;
 
     invoke-interface {v2, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
@@ -561,7 +561,7 @@
 
     iget-object v2, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mIsVideoTracksStarted:Ljava/util/Map;
 
-    .line 913
+    .line 923
     invoke-interface {v2, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
@@ -582,7 +582,7 @@
     :cond_3
     move p2, v0
 
-    .line 918
+    .line 928
     :goto_1
     iget-boolean v1, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mIsAudioTrackStarted:Z
 
@@ -590,7 +590,7 @@
 
     if-eqz p2, :cond_5
 
-    .line 920
+    .line 930
     iget-object p2, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mMuxerWrappers:Ljava/util/Map;
 
     invoke-interface {p2}, Ljava/util/Map;->values()Ljava/util/Collection;
@@ -614,26 +614,26 @@
 
     check-cast v1, Lcom/sonymobile/android/media/internal/MediaMuxerWrapper;
 
-    .line 921
+    .line 931
     invoke-virtual {v1}, Lcom/sonymobile/android/media/internal/MediaMuxerWrapper;->start()V
 
     goto :goto_2
 
-    .line 923
+    .line 933
     :cond_4
     iput-boolean v0, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mMuxerRunning:Z
 
-    .line 924
+    .line 934
     iget-object p2, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mVideoTracks:Lcom/sonymobile/android/media/internal/VideoTrackSet;
 
     invoke-virtual {p2}, Lcom/sonymobile/android/media/internal/VideoTrackSet;->setMediaMuxerStarted()V
 
-    .line 925
+    .line 935
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mAudioTrack:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-virtual {p0}, Lcom/sonymobile/android/media/internal/AudioTrack;->setMediaMuxerStarted()V
 
-    .line 927
+    .line 937
     :cond_5
     monitor-exit p1
 
@@ -656,7 +656,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 945
+    .line 955
     iget-object p1, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mIsVideoTracksStarted:Ljava/util/Map;
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -667,11 +667,11 @@
 
     goto :goto_0
 
-    .line 947
+    .line 957
     :cond_0
     iput-boolean v0, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mIsAudioTrackStarted:Z
 
-    .line 950
+    .line 960
     :goto_0
     invoke-direct {p0}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->stopMuxer()V
 
@@ -681,18 +681,18 @@
 .method private reportError(I)V
     .locals 3
 
-    .line 889
+    .line 899
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mStateLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 890
+    .line 900
     :try_start_0
     sget-object v1, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;->ERROR:Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
 
     iput-object v1, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mState:Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
 
-    .line 891
+    .line 901
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mCallback:Landroid/os/Handler;
 
     const/4 v1, 0x1
@@ -703,10 +703,10 @@
 
     move-result-object p0
 
-    .line 892
+    .line 902
     invoke-virtual {p0}, Landroid/os/Message;->sendToTarget()V
 
-    .line 893
+    .line 903
     monitor-exit v0
 
     return-void
@@ -724,7 +724,7 @@
 .method private reportInfo(II)V
     .locals 2
 
-    .line 897
+    .line 907
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "reportInfo info="
@@ -753,7 +753,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 898
+    .line 908
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mCallback:Landroid/os/Handler;
 
     const/4 v0, 0x1
@@ -770,7 +770,7 @@
 .method private stopMuxer()V
     .locals 7
 
-    .line 955
+    .line 965
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mVideoTracks:Lcom/sonymobile/android/media/internal/VideoTrackSet;
 
     invoke-virtual {v0}, Lcom/sonymobile/android/media/internal/VideoTrackSet;->keySet()Ljava/util/Set;
@@ -801,7 +801,7 @@
 
     check-cast v3, Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
 
-    .line 956
+    .line 966
     iget-object v5, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mIsVideoTracksStarted:Ljava/util/Map;
 
     invoke-interface {v5, v3}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
@@ -829,7 +829,7 @@
 
     goto :goto_0
 
-    .line 965
+    .line 975
     :cond_2
     iget-boolean v0, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mIsAudioTrackStarted:Z
 
@@ -837,7 +837,7 @@
 
     if-nez v2, :cond_5
 
-    .line 967
+    .line 977
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mMuxerWrappers:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -861,7 +861,7 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 968
+    .line 978
     iget-object v3, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mMuxerWrappers:Ljava/util/Map;
 
     invoke-interface {v3}, Ljava/util/Map;->values()Ljava/util/Collection;
@@ -884,7 +884,7 @@
 
     const-wide/16 v5, 0x3e8
 
-    .line 977
+    .line 987
     :try_start_0
     invoke-static {v5, v6}, Ljava/lang/Thread;->sleep(J)V
     :try_end_0
@@ -892,7 +892,7 @@
 
     goto :goto_2
 
-    .line 979
+    .line 989
     :catch_0
     new-array v3, v4, [Ljava/lang/String;
 
@@ -902,7 +902,7 @@
 
     invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 982
+    .line 992
     :cond_3
     :goto_2
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -915,26 +915,26 @@
 
     goto :goto_1
 
-    .line 989
+    .line 999
     :cond_4
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mVideoTracks:Lcom/sonymobile/android/media/internal/VideoTrackSet;
 
     invoke-virtual {v0}, Lcom/sonymobile/android/media/internal/VideoTrackSet;->setMediaMuxerStopped()V
 
-    .line 994
+    .line 1004
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mAudioTrack:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-virtual {v0}, Lcom/sonymobile/android/media/internal/AudioTrack;->setMediaMuxerStopped()V
 
-    .line 999
+    .line 1009
     iput-boolean v1, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mMuxerRunning:Z
 
-    .line 1004
+    .line 1014
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mStopLatch:Ljava/util/concurrent/CountDownLatch;
 
     if-eqz p0, :cond_5
 
-    .line 1005
+    .line 1015
     invoke-virtual {p0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
     :cond_5
@@ -3005,23 +3005,23 @@
 .method public setHalfFps()V
     .locals 2
 
-    .line 937
+    .line 947
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mStateLock:Ljava/lang/Object;
 
     monitor-enter v0
 
     const/4 v1, 0x1
 
-    .line 938
+    .line 948
     :try_start_0
     iput-boolean v1, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mIsHalfFps:Z
 
-    .line 939
+    .line 949
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mVideoTracks:Lcom/sonymobile/android/media/internal/VideoTrackSet;
 
     invoke-virtual {p0}, Lcom/sonymobile/android/media/internal/VideoTrackSet;->setHalfFps()V
 
-    .line 940
+    .line 950
     monitor-exit v0
 
     return-void
@@ -3895,16 +3895,16 @@
 .method public setStreamingMode(Z)V
     .locals 1
 
-    .line 931
+    .line 941
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mStateLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 932
+    .line 942
     :try_start_0
     iput-boolean p1, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mIsStreamingMode:Z
 
-    .line 933
+    .line 943
     monitor-exit v0
 
     return-void
@@ -4654,6 +4654,77 @@
     move-exception p0
 
     .line 289
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p0
+.end method
+
+.method public setWindNoiseReduction(Z)V
+    .locals 4
+
+    const-string v0, "Incorrect state "
+
+    .line 889
+    iget-object v1, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mStateLock:Ljava/lang/Object;
+
+    monitor-enter v1
+
+    .line 890
+    :try_start_0
+    iget-object v2, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mState:Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
+
+    sget-object v3, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;->DATA_SOURCE_CONFIGURED:Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
+
+    if-ne v2, v3, :cond_0
+
+    .line 894
+    iget-object p0, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mAudioTrack:Lcom/sonymobile/android/media/internal/AudioTrack;
+
+    invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/AudioTrack;->setWindNoiseReduction(Z)V
+
+    .line 895
+    monitor-exit v1
+
+    return-void
+
+    .line 891
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget-object p0, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->mState:Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
+
+    invoke-virtual {p0}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;->name()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    const-string v0, " Can only be called in DATA_SOURCE_CONFIGURED"
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {p1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    :catchall_0
+    move-exception p0
+
+    .line 895
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

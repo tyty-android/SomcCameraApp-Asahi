@@ -40,10 +40,10 @@
         }
     .end annotation
 
-    .line 1015
+    .line 1025
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    .line 1017
+    .line 1027
     iput-object p1, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$EventHandler;->mRecorder:Ljava/lang/ref/WeakReference;
 
     return-void
@@ -54,7 +54,7 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 5
 
-    .line 1022
+    .line 1032
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$EventHandler;->mRecorder:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {p0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -63,14 +63,14 @@
 
     check-cast p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
-    .line 1024
+    .line 1034
     iget v0, p1, Landroid/os/Message;->arg1:I
 
     const v1, 0xfffffff
 
     and-int/2addr v0, v1
 
-    .line 1025
+    .line 1035
     iget v1, p1, Landroid/os/Message;->what:I
 
     const/4 v2, 0x0
@@ -93,7 +93,7 @@
 
     goto/16 :goto_0
 
-    .line 1073
+    .line 1083
     :pswitch_0
     invoke-static {p0}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->-$$Nest$fgetmCallback(Lcom/sonymobile/android/media/internal/SomcMediaRecorder;)Landroid/os/Handler;
 
@@ -109,12 +109,12 @@
 
     move-result-object p0
 
-    .line 1074
+    .line 1084
     invoke-virtual {p0}, Landroid/os/Message;->sendToTarget()V
 
     goto :goto_0
 
-    .line 1067
+    .line 1077
     :pswitch_1
     invoke-static {p0}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->-$$Nest$fgetmAudioTrack(Lcom/sonymobile/android/media/internal/SomcMediaRecorder;)Lcom/sonymobile/android/media/internal/AudioTrack;
 
@@ -132,7 +132,7 @@
 
     goto :goto_0
 
-    .line 1063
+    .line 1073
     :pswitch_2
     invoke-static {p0}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->-$$Nest$fgetmAudioTrack(Lcom/sonymobile/android/media/internal/SomcMediaRecorder;)Lcom/sonymobile/android/media/internal/AudioTrack;
 
@@ -152,13 +152,13 @@
 
     goto :goto_0
 
-    .line 1053
+    .line 1063
     :cond_0
     invoke-static {p0, v3, v2}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->-$$Nest$monTrackStopped(Lcom/sonymobile/android/media/internal/SomcMediaRecorder;ZLjp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;)V
 
     goto :goto_0
 
-    .line 1047
+    .line 1057
     :cond_1
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -166,7 +166,7 @@
 
     if-eqz v0, :cond_6
 
-    .line 1048
+    .line 1058
     iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast p1, Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
@@ -190,13 +190,13 @@
 
     goto :goto_0
 
-    .line 1041
+    .line 1051
     :cond_3
     invoke-static {p0, v3, v2}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->-$$Nest$monTrackStarted(Lcom/sonymobile/android/media/internal/SomcMediaRecorder;ZLjp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;)V
 
     goto :goto_0
 
-    .line 1034
+    .line 1044
     :cond_4
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -204,7 +204,7 @@
 
     if-eqz v0, :cond_6
 
-    .line 1035
+    .line 1045
     iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast p1, Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
@@ -213,7 +213,7 @@
 
     goto :goto_0
 
-    .line 1030
+    .line 1040
     :cond_5
     iget p1, p1, Landroid/os/Message;->arg2:I
 
